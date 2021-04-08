@@ -1,0 +1,52 @@
+#newsletter{
+  background-color: purple;
+  
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  }
+#newsletter img{
+  width: 50px;
+  
+}
+.logo{
+  display: inline-block;
+}
+
+#champs_newsletter div{
+  
+  
+  align-items: center;
+  justify-content: center;
+ 
+  position: absolute;
+  
+  left: 50%;
+  top: 30%;
+  
+}
+
+button{
+  background-color: lawngreen;
+  color: white;
+  border-radius: 5px;
+}
+input{
+  border-radius: 5px;
+  
+}
+section:nth-child(1)>div+div{
+  color: white;
+}
+nav{
+  display: flex;
+  
+  
+}
+.menu>ul>li{
+  display: flex;
+  display:inline-block;
+  justify-content: space-between;
+}
+
+
