@@ -1,3 +1,5 @@
+
+/* header */
 #newsletter{
   background-color: purple;
   
@@ -5,12 +7,14 @@
   justify-content: center;
   position: relative;
   }
+
 #newsletter img{
   width: 50px;
   
 }
 .logo{
   display: inline-block;
+  border: solid 1px gray;
 }
 
 #champs_newsletter div{
@@ -38,15 +42,80 @@ input{
 section:nth-child(1)>div+div{
   color: white;
 }
+
+/* nav */
 nav{
   display: flex;
+  border-bottom: solid 1px gray;
   
   
 }
 .menu>ul>li{
-  display: flex;
+  
   display:inline-block;
-  justify-content: space-between;
+  
+  position: relative;
+  margin:  80px;
+}
+.menu>ul>li:before{
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 3px;
+  width: 0%;
+  bottom: 0px;
+  
+
+}
+.menu>ul>li:hover::before{
+  width: 100%;
+}
+.menu>ul>:last-of-type{
+  margin-left: 140px;
+  border-left: solid 1 px gray;
+}
+/* fin nav */
+/* fin header */
+
+/* debut contenu */
+#contenu{
+  text-align:justify;
+  
 }
 
+h1, h2{
+  text-align: center;
+  font-size: 300%;
+}
+h1{
+  padding: 100px;
+}
+p, section:nth-child(2)>ul{
+  margin-left: 20%;
+  
+}
+section:nth-child(2)>ul>li{
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+section:nth-child(2)>p{
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+/* fin contenu */
+
+/* debut footer */
+footer{
+  margin-top: 100px;
+  background-color: gray;
+  height: 450px;
+}
+#section{
+  display: flex;
+  justify-content:center
+  
+}
+footer>section>div{
+  padding: 100px;
+}
 
